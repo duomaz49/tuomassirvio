@@ -1,3 +1,10 @@
+@media screen and (max-width: 600px) {
+    .mynav a:not(:first-child) {display: none;}
+    .mynav a.icon {
+      float: right;
+      display: block;
+    }
+}
 
 nav {
     background-color: #D7263D;
