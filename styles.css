@@ -133,5 +133,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .Mshown  {font-size: 5px;}
+    .Mshown  {font-size: small;}
+    .hidden  {display:none}
 }
