@@ -2,9 +2,9 @@
 nav {
     background-color: #D7263D;
     overflow: hidden;
+    padding: 10px;
     margin-right: 40px;
-    width: 100%;
-
+    margin-top: -10px;
 }
 
 nav a {
@@ -33,16 +33,6 @@ header {
     padding: 20px;
     text-align: center;
 }
-
-header ul {
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    margin-right: 20px;
-}
-
 header a {
     text-decoration: none;
     color: #fff;
@@ -142,13 +132,6 @@ footer {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    header ul {
-        text-align: center;
-    }
-
-    header li {
-        display: block;
-        margin-bottom: 10px;
-    }
+@media screen and (max-width: 500px) {
+    .mynav { visibility: hidden; }
 }
