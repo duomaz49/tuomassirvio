@@ -133,5 +133,5 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .mynav { visibility: hidden; }
+    .Mshown  {font-size: small;}
 }
