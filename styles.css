@@ -108,19 +108,26 @@ p {
 
 #herne {
     display: inline-flex;
-    width: 22%;
+    width: 20.8%;
     height: auto;
     margin-right: 10px;
     margin-left: 20px;
 }
-#peruna,
-#lohi {
+#peruna {
     display: inline-flex;
-    width: 20%;
+    width: 19.5%;
     height: auto;
     margin-right: 10px;
     margin-left: 20px;
 
+}
+
+#Vk2023 {
+    display: inline-flex;
+    width: 31%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 footer {
@@ -133,6 +140,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .Mshown  {font-size: small;}
-    .hidden  {display:none}
+    .Mshown  {font-size: 7px;}
+    .hidden  {display:none;}
 }
