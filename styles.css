@@ -82,14 +82,20 @@ h1 {
     font-size: 35px;
 }
 
-h2,
+h4,
 h3 {
     font-size: 24px;
     color: #333;
 }
 
-h4 {
+h2 {
     font-size: 35px;
+    color: #333;
+    margin-top: auto;
+    text-align: center;
+}
+h5 {
+    font-size: 24px;
     color: #333;
     margin-top: auto;
 }
