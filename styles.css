@@ -214,7 +214,6 @@ section {
 .text-container {
     margin: 10px;
     text-align: justify;
-
 }
 
 /* ICON */
@@ -422,7 +421,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-    height:25vh;
+    height: 25vh;
     margin: 0 1rem;
 }
 
