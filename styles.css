@@ -240,18 +240,15 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color1, 
-.btn-color2 {
+.btn-color1 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color1:hover, 
-.btn-color2:hover {
+.btn-color1:hover {
     cursor: pointer;
 }
 
-.btn-color1, 
-.btn-color2:hover {
+.btn-color1 {
     background: rgb(53, 53, 53);
     color: white;
 }
@@ -259,15 +256,6 @@ section {
 .btn-color1:hover {
     background: rgb(0,0,0);
 }
-
-.btn-color2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border:rgb(255, 255, 255) 0.1rem solid;
-}
-
 .btn-container {
     gap: 1rem;
 }
@@ -397,7 +385,7 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
 }
 
 .contact-info-upper-container {
@@ -424,7 +412,7 @@ article .icon {
 }
 
 .contact-icon {
- cursor: default;
+    cursor: default;
 }
 
 .email-icon {
@@ -434,7 +422,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-    height:260vh;
+    height:25vh;
     margin: 0 1rem;
 }
 
