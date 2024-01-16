@@ -14,7 +14,7 @@ body{
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 p {
     color: rgb(85, 85, 85);
@@ -139,12 +139,12 @@ a:hover {
 
 .hamburger-icon span:first-child {
     opacity: 1;
-    
+
 }
 
 .hamburger-icon span:first-child {
     transform: none;
-    
+
 }
 
 /* SECTIONS */
@@ -261,7 +261,7 @@ section {
 
 /* ABOUT SECTION */
 
-#about { 
+#about {
     position: relative;
 }
 
