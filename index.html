@@ -1,86 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuomas Sirviö</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tuomas Sirviö Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
-
 <body>
-<!-- Header Section -->
-<header>
-    <div class='sticky'>
-        <nav class="mynav"><br>
-            <a href="#homepage" class="navButton">Kotisivu</a>
-            <a href="#cv" class="navButton">Portfolio</a>
-            <a href="#pictures" class="navButton">Kuvat</a>
-            <a href="#contact" class="navButton">Ota yhteyttä</a>
+        <nav id="desktop-nav">
+            <div class="logo">Tuomas Sirviö</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#pictures">Pictures</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-    </div>
-</header>
-
-<!-- Main Content Section -->
-<main>
-    <!-- Home Section -->
-    <section id="homepage"><br>
-        <h1>Welcome</h1><br>
-        <div class="text">
-            <p id="introductionText">Hey!
-                My name is Tuomas and i am a versatile professional in the restaurant industry who can help you find solutions to your concerns. I
-                have been working in the restaurant industry for ten years. My career has been diverse, and I have accumulated
-                experience in various restaurants such as cafes, fast-food restaurants, à la carte establishments, and
-                Michelin-starred fine dining restaurants. In terms of personality, I am hardworking, organized,
-                ambitious, and fair. I quickly learn new things and aspire
-                to develop and challenge my professional skills through different tasks. Former colleagues would describe me as
-                a diligent worker with creative problem-solving skills, always willing to help others when needed."
-            </p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section>
-        <h2 id="cv">Portfolio</h2>
-        <h3>Education</h3><br>
-        <a href='pictures\Tuomaskokki.jpg' target="_blank"><img src="pictures\Tuomaskokki.jpg" alt="a chef" id="tuomas"></a>
-        <p>
-            Batchelor of Business Admistration (Software production): 2nd-year student Haaga-Helia University of Applied Sciences<br>
-            Vocational School: Restaurant cook studies at Stadin ammattiopisto 08/2014 – 06/2016<br>
-            High School: Helsingin Rudolf Steiner School 08/2009 – 06/2013
-        </p><br>
-        <h3>Work experince in Finland:</h3><br>
-        <p>Gastrogrill Muré</p>
-        <p>Ravintola Emo</p>
-        <p>Finnjävel Salonki &#10025;</p>
-        <p>Ravintola Boon Nam</p>
-        <p>Ravintola Gösta</p>
-        <p>Ravintola Olo &#10025;</p>
-        <p>Bistro Sinne Porvoo</p><br>
-        <h3>Work experience in Sweden</h3><br>
-        <p>Gastrologik Stockholm &#10025;&#10025;</p>
-        <p>Mdghs Rutabaga Stockholm</p>
-        <br>
-    </section>
-    <!-- Picture section -->
-    <section>
-        <h4>Pictures</h4><br>
-        <div id="pictures">
-            <a href='pictures\Herne.jpg' target="_blank"><img src="pictures\Herne.jpg" alt='plate of food' id="peasTartalet"></a>
-            <a href='pictures\Peruna.jpg' target="_blank"><img src="pictures\Peruna.jpg" alt='plate of food' id="potateDish"></a>
-            <a href='pictures\Vk2023.jpg' target="_blank"><img src="pictures\Vk2023.jpg" alt='plate of food' id="chefOfTheYearApplication"></a>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <h5>Contact information</h5>
-        <p>Email: <a href='mailto:tuomas.sirvio@myy.haaga-helia.fi'>tuomas.sirvio@myy.haaga-helia.fi</a><br>
-    </section>
-</main>
-
-<!-- Footer Section -->
-<footer>
-    <p>@Tuomas Sirviö 2024</p>
-</footer>
-</body>
+        <nav id="hamburger-nav">
+            <div class="logo">Tuomas Sirviö</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#pictures" onclick="toggleMenu()">Pictures</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section-pic-container">
+                <img src="./pictures/Tuomaskokki.jpg" alt="Tuomas Sirviö profile picture" class="picture-round">
+            </div>
+            <div class="section-text">
+                <p class="section-text-p1">Hello, I'm</p>
+                <h1 class="title">Tuomas Sirviö</h1>
+                <p class="section-text-p2">Aspiring Web developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="window.open('./Cv/Tuomas-Sirviö-Cv.pdf')">Download CV</button>
+                    <button class="btn btn-color1" onclick="location.href = '#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./pictures/LI-In-Bug.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tuomas-sirvi%C3%B6-a07506285/?originalSubdomain=fi'">
+                    <img src="./pictures/GitHub_Logo.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/duomaz49'">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section-text-p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section-pic-container">
+                    <img src="./pictures/TomaattijaPertti.jpg" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img src="./pictures/WorkExperience.jpg" alt="Experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p> Over 10 years of experience in restaurant industry</p>
+                            <p> Quality Assurance Trainee 1/10/2023 - Until now</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./pictures/EducationImg.png" alt="Education icon" class="icon">
+                            <h3>Education</h3>
+                            <p> Bachelor of Business Admistration (Software production): 2nd-year student @ Haaga-Helia University of Applied Sciences<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Hi my name is Tuomas, a former chef with a decade of experience in the dynamic world of the restaurant industry. 
+                            My journey has taken me through a diverse range of culinary environments, 
+                            from bustling cafes and fast-food establishments to refined à la carte venues and Michelin-starred fine dining restaurants.
+                            Having honed my skills in the high-pressure environment of Michelin-starred establishments, 
+                            I bring a unique blend of creativity, precision, and a strong work ethic to everything I do.
+                             My time as a chef has instilled in me qualities such as hard work, organization, ambition, and a fair approach to tasks.
+                            Now, I'm embarking on a new adventure as an aspiring web developer. 
+                            Just as in the kitchen, I am driven to continuously learn and grow in the world of technology.
+                            My former colleagues would vouch for my diligence, creative problem-solving abilities, and a willingness to assist others whenever needed. 
+                            I'm excited to bring my diverse skill set and passion for excellence to the realm of web development.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./pictures/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+        </section>
+        <section id="skills">
+            <p class="section-text-p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="skills-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">Languages</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>                            
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">Systems & Skills</h2>
+                        <div class="article-container">                         
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>Jira</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./pictures/checkmark.png" alt="skills icon" class="icon">
+                                <div>
+                                    <h3>ChatGPT</h3>
+                                    <p>MASTER</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./pictures/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+        </section>
+        <section id="projects">
+            <p class="section-text-p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="skills-details-container">
+                <div class="about-container">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./pictures/Lohi.jpg" alt="Project 1" class="project-img">
+                        </div>
+                        <h2 class="skills-sub-title project-title">Project One</h2>
+                        <div class="btn.container">
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                            Github
+                         </button>
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                         Live Demo
+                         </button>
+                    <!-- ADD MORE PROJECTS -->
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./pictures/Herne.jpg" alt="Project 2" class="project-img">
+                        </div>
+                        <h2 class="skills-sub-title project-title">Project Two</h2>
+                        <div class="btn.container">
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                            Github
+                         </button>
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                         Live Demo
+                         </button>
+                    <!-- ADD MORE PROJECTS -->
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./pictures/Peruna.jpg" alt="Project 3" class="project-img">
+                        </div>
+                        <h2 class="skills-sub-title project-title">Project Three</h2>
+                        <div class="btn.container">
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                            Github
+                         </button>
+                         <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
+                         Live Demo
+                         </button>
+                    <!-- ADD MORE PROJECTS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./pictures/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+        <section id="contact">
+            <p class="section-text-p1">Get in touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./pictures/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                    <p><a href="mailto:tuomas.sirvio@myy.haaga-helia.fi">tuomas.sirvio@myy.haaga-helia.fi</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./pictures/LI-In-Bug.png" alt="LinkedIn icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/tuomas-sirvi%C3%B6-a07506285/?originalSubdomain=fi">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Tuomas Sirviö. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
