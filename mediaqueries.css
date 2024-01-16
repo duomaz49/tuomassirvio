@@ -28,7 +28,7 @@
         height: fit-content;
     }
     section {
-        margin: 0, 5%;
+        margin: 0 5%;
     }
     .section-pic-container{
         width: 275px;
@@ -56,7 +56,7 @@
       height: fit-content;
       margin-bottom: 2rem;
     }
-    .about-containers,
+    .about-container,
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
@@ -69,7 +69,7 @@
     .footer-text-p {
       font-size: 1rem;
     }
-    .experience-sub-title {
+    .skills-sub-title {
       font-size: 1.25rem;
     }
     .logo {
@@ -80,12 +80,12 @@
       gap: 0.5rem;
       text-align: center;
     }
-    .section__pic-container {
+    .section-pic-container {
       width: auto;
       height: 46vw;
       justify-content: center;
     }
-    .section__text__p2 {
+    .section-text-p2 {
       font-size: 1.25rem;
     }
     .title {
