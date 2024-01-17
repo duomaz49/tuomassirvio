@@ -373,9 +373,10 @@ article .icon {
     color: black;
 }
 
-.projct-btn {
+.project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    cursor: pointer;
 }
 
 /* CONTACT SECTION */
