@@ -1,0 +1,15 @@
+
+ş	Web:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(õƒçÿJ$3dac637f-e67a-4ff1-adf8-954e29326384
+…	Web:S6851+"KRemove redundant word "picture" from the "alt" attribute of your "img" tag.(Ü¶¬bJ$8bf4a2b6-f47c-4c91-a2b1-e2e8b6d2d7ed
+	Web:S68475"RNon-interactive elements should not be assigned mouse or keyboard event listeners.(ˆ…ÒæJ$a6047cd1-e125-4966-8fd3-4ea0e46ea15f
+’	Web:S68476"RNon-interactive elements should not be assigned mouse or keyboard event listeners.(´áÑÓûÿÿÿÿJ$cc0c8367-9f90-4f1d-8013-483ea06ef9b0
+‹	Web:S6851?"KRemove redundant word "picture" from the "alt" attribute of your "img" tag.(©©ôòúÿÿÿÿJ$1c195993-ae79-4fa8-a5df-e5eac176d56d
+’	Web:S6847^"RNon-interactive elements should not be assigned mouse or keyboard event listeners.(À·°ıÿÿÿÿJ$0030d87f-218f-49e1-8c46-4a79f2fdc3b2
+“	Web:S6847©"RNon-interactive elements should not be assigned mouse or keyboard event listeners.(ÉÜÈüÿÿÿÿJ$09bac99e-c4bb-49eb-9693-0606f327e8dd
+pWeb:AvoidCommentedOutCodeCheck²"Remove this commented out code.(êş€ÕJ$f90657ef-cf87-4458-bd62-97712020646b
+uWeb:AvoidCommentedOutCodeCheckÁ"Remove this commented out code.(ÉáüÜúÿÿÿÿJ$24896c63-22d3-4705-94ae-498ec9d66c67
+pWeb:AvoidCommentedOutCodeCheckĞ"Remove this commented out code.(›²ÕÉJ$3c19ab11-fb3d-4cf5-b190-bace43ecf00d
+“	Web:S6847ß"RNon-interactive elements should not be assigned mouse or keyboard event listeners.(ˆ´÷ìûÿÿÿÿJ$9ff2c4b7-6bd0-4a93-a589-b3c9e12d3f0c
+	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(‹Ü‘¢J$81699343-51b2-4113-b06f-7c55b47b75a6
+~	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(§Æ«jJ$7c1d14a2-f355-4c90-83e7-dbec5d03bc9d
+€	Web:S5255ğ"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(î¿Ş¦J$108be825-6d27-4f20-94ac-fae0ae99e183
